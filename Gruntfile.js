@@ -17,7 +17,7 @@ module.exports = function (grunt) {
         }],
         helpers: './helpers/**/*.js',
         
-        defaultTitle: 'Rafael Minguet\'s Blog',
+        defaultTitle: 'Rafael Minguet García\'s Blog',
         pathAssets: '/assets/',
         postsLayout: 'postsLayout.hbs'
       },
@@ -79,6 +79,21 @@ module.exports = function (grunt) {
       }
     },
     
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
+        },
+        files: [{
+          expand: true,
+          cwd: '../dist/',
+          src: '**/*.html',
+          dest: '../dist/'
+        }]
+      }
+    }
+    
   });
 
   /* load every plugin in package.json */
@@ -87,11 +102,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   
   /* grunt tasks */
   grunt.registerTask(
     'default',
-    ['assemble', 'concat', 'uglify', 'cssmin', 'imagemin']
+    ['assemble', 'concat', 'uglify',
+     'cssmin', 'imagemin', 'htmlmin']
   );
 
 };
