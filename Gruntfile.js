@@ -16,7 +16,10 @@ module.exports = function (grunt) {
           sortorder: 'desc'
         }],
         helpers: './helpers/**/*.js',
-        defaultTitle: 'Rafael Minguet\'s Blog'
+        
+        defaultTitle: 'Rafael Minguet\'s Blog',
+        pathAssets: '/assets/',
+        postsLayout: 'main.hbs'
       },
       skeleton: {
         files: [{
