@@ -34,14 +34,16 @@ module.exports = function (grunt) {
     concat: {
       dist1: {
         src: [
-            './public/assets/js/jquery.js',
-            './public/assets/js/bootstrap.js'
+          './public/assets/js/jquery.js',
+          './public/assets/js/bootstrap.js'
         ],
         dest: './public/assets/js/production.js',
       },
       dist2: {
         src: [
-            './public/assets/css/*.css',
+          './public/assets/css/bootstrap.css',
+          './public/assets/css/business-casual.css',
+          './public/assets/css/site.css',
         ],
         dest: './public/assets/css/production.css',
       }
@@ -64,7 +66,18 @@ module.exports = function (grunt) {
           ext: '.min.css'
         }]
       }
-    }
+    },
+    
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: './public/assets/img/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: '../dist/assets/img/'
+        }]
+      }
+    },
     
   });
 
@@ -73,11 +86,12 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
   
   /* grunt tasks */
   grunt.registerTask(
     'default',
-    ['assemble', 'concat', 'uglify', 'cssmin']
+    ['assemble', 'concat', 'uglify', 'cssmin', 'imagemin']
   );
 
 };

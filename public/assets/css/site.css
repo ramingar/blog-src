@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+.box,footer{
+	background:rgba(255,255,255,.9)
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 769px) {
   .row {
