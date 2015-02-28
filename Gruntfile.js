@@ -45,14 +45,39 @@ module.exports = function (grunt) {
         ],
         dest: './public/assets/css/production.css',
       }
+    },
+    
+    uglify: {
+      build: {
+        src: './public/assets/js/production.js',
+        dest: '../dist/assets/js/production.min.js'
+      }
+    },
+    
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: './public/assets/css/',
+          src: ['production.css'],
+          dest: '../dist/assets/css/',
+          ext: '.min.css'
+        }]
+      }
     }
+    
   });
 
   /* load every plugin in package.json */
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   
   /* grunt tasks */
-  grunt.registerTask('default', ['assemble', 'concat']);
+  grunt.registerTask(
+    'default',
+    ['assemble', 'concat', 'uglify', 'cssmin']
+  );
 
 };
