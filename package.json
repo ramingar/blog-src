@@ -7,7 +7,8 @@
     "assemble": "^0.4.42"
   },
   "devDependencies": {
-    "grunt": "^0.4.5"
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

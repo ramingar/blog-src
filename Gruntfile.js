@@ -29,13 +29,30 @@ module.exports = function (grunt) {
           src: ['**/*.hbs', '**/*.md']
         }]
       },
+    },
+    
+    concat: {
+      dist1: {
+        src: [
+            './public/assets/js/jquery.js',
+            './public/assets/js/bootstrap.js'
+        ],
+        dest: './public/assets/js/production.js',
+      },
+      dist2: {
+        src: [
+            './public/assets/css/*.css',
+        ],
+        dest: './public/assets/css/production.css',
+      }
     }
   });
 
   /* load every plugin in package.json */
   grunt.loadNpmTasks('assemble');
-
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  
   /* grunt tasks */
-  grunt.registerTask('default', ['assemble']);
+  grunt.registerTask('default', ['assemble', 'concat']);
 
 };

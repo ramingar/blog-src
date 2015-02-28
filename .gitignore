@@ -33,3 +33,5 @@ node_modules
 # Distribution
 dist/*
 dist
+public/assets/css/production.css
+public/assets/js/production.js
