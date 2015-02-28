@@ -7,7 +7,7 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
 <head>
     {{>header-metas}}
     <title>{{>title}}</title>
-    {{>header-bootstrap}}
+    {{>header-css}}
 </head>
 
 <body>
@@ -21,6 +21,11 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
   
     {{>footer}}
     {{>footer-js}}
+  
+    {{#is page.filename "index.html"}}
+        <!-- Activate the carousel (only if current page is index.html) -->
+        {{>footer-activate-carousel}}
+    {{/is}}
 
 </body>
 
