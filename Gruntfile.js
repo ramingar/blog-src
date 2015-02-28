@@ -1,3 +1,4 @@
+/*jslint undef: true */
 module.exports = function (grunt) {
   'use strict';
 
@@ -28,7 +29,7 @@ module.exports = function (grunt) {
           expand: true,
           src: ['**/*.hbs', '**/*.md']
         }]
-      },
+      }
     },
     
     concat: {
@@ -37,15 +38,15 @@ module.exports = function (grunt) {
           './public/assets/js/jquery.js',
           './public/assets/js/bootstrap.js'
         ],
-        dest: './public/assets/js/production.js',
+        dest: './public/assets/js/production.js'
       },
       dist2: {
         src: [
           './public/assets/css/bootstrap.css',
           './public/assets/css/business-casual.css',
-          './public/assets/css/site.css',
+          './public/assets/css/site.css'
         ],
-        dest: './public/assets/css/production.css',
+        dest: './public/assets/css/production.css'
       }
     },
     
@@ -102,9 +103,9 @@ module.exports = function (grunt) {
           cwd: './public/assets/fonts/',
           src: ['*'],
           dest: '../dist/assets/fonts/'
-        }],
-      },
-    },
+        }]
+      }
+    }
     
   });
 
@@ -121,7 +122,7 @@ module.exports = function (grunt) {
   grunt.registerTask(
     'default',
     ['assemble', 'concat', 'uglify',
-     'cssmin', 'imagemin', 'htmlmin', 'copy']
+      'cssmin', 'imagemin', 'htmlmin', 'copy']
   );
 
 };
