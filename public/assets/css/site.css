@@ -1,8 +1,5 @@
 /* Changes to the by default template */
-.row {
-  margin-right: 15px;
-  margin-left: 15px;
-}
+
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 769px) {

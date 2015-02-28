@@ -20,11 +20,7 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
     </div>
   
     {{>footer}}
-
-    {{#is page.filename "index.html"}}
-        <!-- Load all necessary files to carousel works (only if current page is index.html) -->
-        {{>footer-js}}
-    {{/is}}
+    {{>footer-js}}
 
 </body>
 
