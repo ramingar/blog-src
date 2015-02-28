@@ -5,14 +5,14 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
 <html lang="es">
   
 <head>
-    {{>headerMetas}}
+    {{>header-metas}}
     <title>{{>title}}</title>
-    {{>headerBootStrap}}
+    {{>header-bootstrap}}
 </head>
 
 <body>
 
-    {{>bodyHeader}}
+    {{>body-header}}
     {{>navigation}}
 
     <div class="container">
@@ -23,7 +23,7 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
 
     {{#is page.filename "index.html"}}
         <!-- Load all necessary files to carousel works (only if current page is index.html) -->
-        {{>footerJs}}
+        {{>footer-js}}
     {{/is}}
 
 </body>
