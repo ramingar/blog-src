@@ -19,7 +19,7 @@ module.exports = function (grunt) {
         
         defaultTitle: 'Rafael Minguet\'s Blog',
         pathAssets: '/assets/',
-        postsLayout: 'main.hbs'
+        postsLayout: 'postsLayout.hbs'
       },
       skeleton: {
         files: [{

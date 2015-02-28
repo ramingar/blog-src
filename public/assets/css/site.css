@@ -1,5 +1,7 @@
 /* Changes to the by default template */
-
+.post h1 {
+  text-align: center;
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (min-width : 769px) {
