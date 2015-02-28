@@ -92,7 +92,19 @@ module.exports = function (grunt) {
           dest: '../dist/'
         }]
       }
-    }
+    },
+    
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          filter: 'isFile',
+          cwd: './public/assets/fonts/',
+          src: ['*'],
+          dest: '../dist/assets/fonts/'
+        }],
+      },
+    },
     
   });
 
@@ -103,12 +115,13 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   
   /* grunt tasks */
   grunt.registerTask(
     'default',
     ['assemble', 'concat', 'uglify',
-     'cssmin', 'imagemin', 'htmlmin']
+     'cssmin', 'imagemin', 'htmlmin', 'copy']
   );
 
 };
