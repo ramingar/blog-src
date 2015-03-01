@@ -6,7 +6,7 @@ For that, you need some way to edit only your posts without having to deal with 
 
 [Assemble](http://assemble.io/) to the rescue! Assemble is a static site generator (raw html) for Node.js using the [Handlebars](http://handlebarsjs.com/) template engine. With Assemble you can set up your project to accomplish your goal only editing Markdown files for each new post you want to publish. Awesome!
 
-All code is under GNU GPL v2 terms and you can use, study, share, copy and modify all what you want.
+The entire code is under GNU GPL v2 terms and you can use, study, share, copy and modify all what you want.
 
 ## Installation
 
