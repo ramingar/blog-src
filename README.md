@@ -28,7 +28,7 @@ After that, let's go to get all dependencies:
 Finally, compile our project:
 > grunt
 
-You will have a dist folder at the parent directory of this project, with all the things ready to publish in GitHub. You only need to edit as you like all the templates and posts.
+You will have a dist folder at the parent directory of this project, with all the things ready to publish in GitHub. You only need to edit all the templates and posts as you like.
 
 ## Considerations
 
