@@ -13,7 +13,7 @@ module.exports = function (grunt) {
         collections: [{
           name: 'posts',
           inflection: 'post',
-          sortby: 'posted',
+          sortby: 'post.data.posted',
           sortorder: 'desc'
         }],
         helpers: './helpers/**/*.js',
