@@ -36,4 +36,4 @@ This project is in continous changes because I'm using it to publish my blog. Fo
 
 - - -
 
-Made with <img src="./public/assets/img/heart-kingdom-hearts.png" alt="love" width="92" height="92"/> thanks to Node.js, Assemble, Handlebars and Grunt using [Business Casual](http://startbootstrap.com/template-overviews/business-casual/) template from StartBootstrap.
+Made with <img src="./public/assets/img/heart-kingdom-hearts.png" alt="love" width="20" height="18"/> thanks to Node.js, Assemble, Handlebars and Grunt using [Business Casual](http://startbootstrap.com/template-overviews/business-casual/) template from StartBootstrap.
