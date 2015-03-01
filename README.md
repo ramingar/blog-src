@@ -1,6 +1,6 @@
 # blog-src
 
-This is a mini CMS to host your blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
+This is a mini CMS I made for my entertainment to host your blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
 
 For that, you need some way to edit only your posts without having to deal with any databases (not supported by gh-pages) and get your html file magically created to upload into your repository.
 
