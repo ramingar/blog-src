@@ -31,7 +31,7 @@ You will have a dist folder at the parent directory of this project, with all th
 
 ## Considerations
 
-This project is in continous changes because I'm using it to publish my blog. For this reason, you will notice things are different one day to another
+This project is in continous changes because I'm using it to publish my blog. For this reason, you will notice things are different one day to another.
 
 
 - - -
