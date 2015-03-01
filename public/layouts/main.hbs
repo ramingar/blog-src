@@ -1,5 +1,6 @@
 ---
 mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
+pathToAssets: <%= pathAssets %>
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -25,6 +26,11 @@ mainTitle: <%= defaultTitle %>  # Lo-Dash template working here!!
     {{#is page.filename "index.html"}}
         <!-- Activate the carousel (only if current page is index.html) -->
         {{>footer-activate-carousel}}
+    {{/is}}
+
+    {{#is page.filename "blog.html"}}
+        <!-- Retrieve posts in JSON (only if current page is blog.html) -->
+        {{>footer-retrieve-posts-json}}
     {{/is}}
 
 </body>

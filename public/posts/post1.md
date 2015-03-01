@@ -3,19 +3,19 @@ posts:
  data:
   titleOfThisPage: "First!"
   posted: 2015-02-08
+  headerImage: "slide-1.jpg"
  tags: [untag]
  dest: post1.html
 layout: <%= postsLayout %>
-pathImages: <%= pathAssets %>img/
 ---
 
-#This is my first post!
+# This is my first post!
 
-<img class="img-responsive img-border img-full" src="{{pathImages}}slide-1.jpg"/>
+<img class="img-responsive img-border img-full" src="{{pathAssets}}img/slide-1.jpg"/>
+
+- - -
 
 YAAAY
-
-
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at ante metus. Sed vitae ornare dolor. Mauris a orci ultrices turpis facilisis bibendum quis vel sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vel mauris placerat, efficitur diam non, condimentum lorem. Nunc eleifend, leo semper pharetra porttitor, lacus neque efficitur ex, sit amet consequat ligula augue non ligula. Vivamus consectetur diam vel leo maximus pharetra.
 

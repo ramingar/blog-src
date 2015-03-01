@@ -19,7 +19,6 @@ module.exports = function (grunt) {
         helpers: './helpers/**/*.js',
         
         defaultTitle: 'Rafael Minguet García\'s Blog',
-        pathAssets: '/assets/',
         postsLayout: 'posts-layout.hbs'
       },
       skeleton: {
