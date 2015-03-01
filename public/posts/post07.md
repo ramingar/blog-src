@@ -5,7 +5,7 @@ posts:
   posted: 2015-02-17
   headerImage: "slide-1.jpg"
  tags: [untag]
- dest: post7.html
+ dest: post07.html
 layout: <%= postsLayout %>
 ---
 
