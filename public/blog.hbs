@@ -12,7 +12,7 @@ titleOfThisPage: "Blog"
     </div>
 
     {{#each (postsJSON posts)}}
-      <div class="col-lg-12 text-center {{#gt @index 4}}hidden{{/gt}} postExcerpt">
+      <div class="col-lg-12 text-center {{#gt @index 4}}hidden{{else}}displayed{{/gt}} postExcerpt">
         <img class="img-responsive img-border img-full" src="{{pathAssets}}/img/{{this.data.headerImage}}" alt="Imagen de {{this.data.titleOfThisPage}}">
         <h2>{{this.data.titleOfThisPage}}
           <br/>
@@ -30,8 +30,8 @@ titleOfThisPage: "Blog"
 
     <div class="col-lg-12 text-center">
       <ul class="pager">
-        <li id="previous" class="previous"><a href="#">&larr; Newer</a></li>
-        <li id="next" class="next"><a href="#">Older &rarr;</a></li>
+        <li id="previous" class="previous hidden"><a href="#" onclick="pagination.previous(5)">&larr; Newer</a></li>
+        <li id="next" class="next"><a href="#" onclick="pagination.next(5)">Older &rarr;</a></li>
       </ul>
     </div>
   </div>

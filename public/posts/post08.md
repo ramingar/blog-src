@@ -2,7 +2,7 @@
 posts:
  data:
   titleOfThisPage: "8!"
-  posted: 2015-02-21
+  posted: 2015-02-18
   headerImage: "slide-1.jpg"
  tags: [untag, dostags]
  dest: post8.html

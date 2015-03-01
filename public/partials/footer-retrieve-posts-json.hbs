@@ -1,6 +1,7 @@
 <script type="text/javascript">
   //var postsJSON = JSON.parse({{postsJSON posts}});
   //var postsJSON = '{{postsJSON posts}}';
-  var textPostsJSON = $('<div/>').html('{{postsJSON posts "text"}}').text();
-  var postsJSON = JSON.parse(textPostsJSON);
+  //var textPostsJSON = $('<div/>').html('{{postsJSON posts "text"}}').text();
+  //var postsJSON = JSON.parse(textPostsJSON);
+  $(document).ready(pagination.checkButtons());
 </script>

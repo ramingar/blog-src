@@ -1,15 +1,15 @@
 ---
 posts:
  data:
-  titleOfThisPage: "5!"
-  posted: 2015-02-20
+  titleOfThisPage: "13!"
+  posted: 2015-02-23
   headerImage: "slide-1.jpg"
  tags: [untag, dostags]
- dest: post5.html
+ dest: post13.html
 layout: <%= postsLayout %>
 ---
 
-# This is my 5 post!
+# This is my 13 post!
 
 <img class="img-responsive img-border img-full" src="{{pathAssets}}img/slide-1.jpg"/>
 

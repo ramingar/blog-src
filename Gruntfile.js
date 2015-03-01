@@ -35,7 +35,8 @@ module.exports = function (grunt) {
       dist1: {
         src: [
           './public/assets/js/jquery.js',
-          './public/assets/js/bootstrap.js'
+          './public/assets/js/bootstrap.js',
+          './public/assets/js/pagination.js'
         ],
         dest: './public/assets/js/production.js'
       },
