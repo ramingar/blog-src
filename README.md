@@ -2,7 +2,7 @@
 
 This is a mini CMS I made for my entertainment to host your blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
 
-For that, you need some way to edit only your posts without having to deal with any databases (not supported by gh-pages) and get your html file magically created to upload into your repository.
+For that, you need some way to edit only your posts without having to deal with any databases (not supported by gh-pages) and get your html file magically created and ready to upload into your repository.
 
 [Assemble](http://assemble.io/) to the rescue! Assemble is a static site generator (raw html) for Node.js using the [Handlebars](http://handlebarsjs.com/) template engine. With Assemble you can set up your project to accomplish your goal only editing Markdown files for each new post you want to publish. Awesome!
 
