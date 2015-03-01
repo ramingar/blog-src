@@ -19,6 +19,7 @@ Make sure you have installed [Node.js](http://nodejs.org/) and  [Grunt](http://g
 > Install Node.js
 >
 > npm install -g grunt-cli
+>
 > npm install grunt --save-dev
 
 After that, let's go to get all dependencies:
