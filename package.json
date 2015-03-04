@@ -1,5 +1,5 @@
 {
-  "name": "blog-src",
+  "name": "rmg-ghcms",
   "version": "0.1.0",
   "description": "Source code of my published blog",
   "main": "index.hbs",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ramingar/blog-src.git"
+    "url": "https://github.com/ramingar/rmg-ghcms.git"
   },
   "keywords": [
     "node.js",
@@ -35,7 +35,7 @@
   "author": "Rafael Minguet García",
   "license": "GNU GPL v2",
   "bugs": {
-    "url": "https://github.com/ramingar/blog-src/issues"
+    "url": "https://github.com/ramingar/rmg-ghcms/issues"
   },
-  "homepage": "https://github.com/ramingar/blog-src"
+  "homepage": "https://github.com/ramingar/rmg-ghcms"
 }
