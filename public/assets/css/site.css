@@ -9,6 +9,11 @@
   background:rgba(255,255,255,.9)
 }
 
+#social>span>a {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 .hidden {
   display: none;
 }

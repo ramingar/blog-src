@@ -18,7 +18,7 @@ module.exports = function (grunt) {
         }],
         helpers: './helpers/**/*.js',
         
-        defaultTitle: 'Rafael Minguet García\'s Blog',
+        defaultTitle: 'Rafael Minguet García',
         postsLayout: 'posts-layout.hbs'
       },
       skeleton: {
