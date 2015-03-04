@@ -1,4 +1,4 @@
-# blog-src
+# rmg-ghcms
 
 This is a mini CMS I made for my entertainment to host your blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
 

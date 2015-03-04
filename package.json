@@ -1,7 +1,7 @@
 {
   "name": "rmg-ghcms",
-  "version": "0.1.0",
-  "description": "Source code of my published blog",
+  "version": "1.0.0",
+  "description": "Source code of my published blog (or what will be my published blog)",
   "main": "index.hbs",
   "dependencies": {
     "assemble": "^0.4.42"
