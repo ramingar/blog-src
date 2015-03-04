@@ -37,5 +37,7 @@
   "bugs": {
     "url": "https://github.com/ramingar/rmg-ghcms/issues"
   },
-  "homepage": "https://github.com/ramingar/rmg-ghcms"
+  "homepage": "https://github.com/ramingar/rmg-ghcms",
+  
+  "files": [*]
 }
