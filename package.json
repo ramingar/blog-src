@@ -1,6 +1,6 @@
 {
   "name": "rmg-ghcms",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Source code of my published blog (or what will be my published blog)",
   "main": "index.hbs",
   "dependencies": {
@@ -39,5 +39,14 @@
   },
   "homepage": "https://github.com/ramingar/rmg-ghcms",
   
-  "files": [*]
+  "files": [
+    "helpers/",
+    "public/",
+    "Gruntfile.js",
+    "LICENSE",
+    "LICENSE_StartBootstrap",
+    "README.md",
+    "README_StartBootstrap.md",
+    "package.json"
+  ]
 }
