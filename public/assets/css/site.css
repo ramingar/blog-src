@@ -18,10 +18,40 @@
   display: none;
 }
 
-/* Smartphones (portrait) ----------- */
+.tarjeta {
+    text-align: left;
+    border: 1px solid #999;
+    background-color: #DDD;
+    padding: 15px 30px;
+}
+
+
+/* ******************************************** */
+/* MEDIA QUERIES                                */
+/* ******************************************** */
+
+@media only screen and (min-width : 550px) {
+  .tarjeta {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 @media only screen and (min-width : 769px) {
   .row {
     margin-right: 100px;
     margin-left: 100px;
+  }
+  
+  .tarjeta {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .tarjeta {
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
