@@ -1,57 +1,41 @@
-/* ---------------------------------- */
-/* Changes to the by default template */
-/* ---------------------------------- */
-.post h1 {
+body {
+  background-image: url(../../assets/img/bg.png);
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.body-outer {
+  height: 12em;
+  margin-top: -6em;
+  position: absolute;
+  top: 50%;
+  width: 800px;
+}
+
+.headers {
+  color: white;
   text-align: center;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 }
 
-.box,footer{
-  background:rgba(255,255,255,.9)
+.main-title {
+  font-size: 4em;
 }
 
-#social>span>a {
-  margin-left: 8px;
-  margin-right: 8px;
+.rmg-nav-container {
+  width: 25em;
+  margin: auto !important;
 }
 
-.hidden {
-  display: none;
+.container {
+  width: 800px;
+  margin: auto;
 }
 
-.tarjeta {
-    text-align: left;
-    border: 1px solid #999;
-    background-color: #DDD;
-    padding: 15px 30px;
-}
-
-
-/* ******************************************** */
-/* MEDIA QUERIES                                */
-/* ******************************************** */
-
-@media only screen and (min-width : 550px) {
-  .tarjeta {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media only screen and (min-width : 769px) {
-  .row {
-    margin-right: 100px;
-    margin-left: 100px;
-  }
-  
-  .tarjeta {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
-
-@media only screen and (min-width : 1200px) {
-  .tarjeta {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
+footer {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
