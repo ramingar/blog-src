@@ -1,32 +1,6 @@
 ---
 titleOfThisPage: "Parallax"
 ---
-<style type="text/css">
-    .reset {
-        margin: 0;
-        padding: 0;
-    }
-
-    .layer-background {
-        width: 100%;
-    }
-
-    .layer-title {
-        left: 468px !important;
-        top: 107px !important;
-    }
-
-    .layer-okami {
-        left: 470px !important;
-        top: 40px !important;
-    }
-
-    .layer-oki {
-        left: 970px !important;
-        top: 445px !important;
-    }
-</style>
-
 <section class="slide">
     <ul id="scene" class="reset">
         <li class="layer layer-background" data-depth="0.00"><img src="assets/img/okami-background.jpg" /></li>
@@ -35,13 +9,3 @@ titleOfThisPage: "Parallax"
         <li class="layer layer-title" data-depth="0.80"><img src="assets/img/okami-title.png"></li>
     </ul>
 </section>
-
-<script type="application/javascript">
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene, {
-        invertX: true,
-        invertY: true,
-        originX: 0.0,
-        originY: 0.0
-    });
-</script>

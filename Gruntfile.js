@@ -34,8 +34,6 @@ module.exports = function (grunt) {
     concat: {
       dist1: {
         src: [
-          './public/assets/js/jquery.js',
-          './public/assets/js/bootstrap.js',
           './public/assets/js/pagination.js'
         ],
         dest: './public/assets/js/production.js'
@@ -43,15 +41,10 @@ module.exports = function (grunt) {
       dist2: {
         src: [
           './public/assets/css/bootstrap.css',
-          './public/assets/css/site.css'
+          './public/assets/css/site.css',
+          './public/assets/css/parallax.css'
         ],
         dest: './public/assets/css/production.css'
-      },
-      dist3: {
-        src: [
-          './public/assets/js/parallax.min.js'
-        ],
-        dest: './public/assets/js/parallax.min.js'
       }
     },
     
@@ -84,7 +77,7 @@ module.exports = function (grunt) {
         }]
       }
     },
-    
+
     htmlmin: {
       dist: {
         options: {
@@ -102,13 +95,36 @@ module.exports = function (grunt) {
     
     copy: {
       main: {
-        files: [{
-          expand: true,
-          filter: 'isFile',
-          cwd: './public/assets/fonts/',
-          src: ['*'],
-          dest: '../dist/assets/fonts/'
-        }]
+        files: [
+          {
+            expand: true,
+            filter: 'isFile',
+            cwd: './public/assets/fonts/',
+            src: ['*'],
+            dest: '../dist/assets/fonts/'
+          },
+          {
+            filter: 'isFile',
+            src: [
+              './public/assets/js/jquery.js'
+            ],
+            dest: '../dist/assets/js/jquery.js'
+          },
+          {
+            filter: 'isFile',
+            src: [
+              './public/assets/js/bootstrap.js'
+            ],
+            dest: '../dist/assets/js/bootstrap.js'
+          },
+          {
+            filter: 'isFile',
+            src: [
+              './public/assets/js/parallax.min.js'
+            ],
+            dest: '../dist/assets/js/parallax.min.js'
+          }
+        ]
       }
     }
     
