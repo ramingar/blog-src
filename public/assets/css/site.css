@@ -29,16 +29,36 @@ body {
 }
 
 .rmg-nav-container {
-  width: 17em;
   margin: auto !important;
+  width: 21em;
 }
 
-.container {
-  width: 800px;
+.rmg-img-centered {
   margin: auto;
 }
 
+.container {
+  width: 60em;
+  margin: auto;
+}
+
+.container-blog {
+  background-color: white;
+  margin: auto auto 10em;
+  padding: 5em;
+  text-align: center;
+}
+
+.post {
+  text-align: left;
+}
+
+
 footer {
+  -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
+
   bottom: 0;
   background-color: white;
   padding: 1em;
