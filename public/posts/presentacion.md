@@ -3,7 +3,7 @@ posts:
  data:
   titleOfThisPage: "¡El primero!"
   posted: 2015-11-10
-  headerImage: "slide-1.jpg"
+  headerImage: "book-presentation.jpg"
  tags: [introduction]
  dest: presentacion
 layout: <%= postsLayout %>
@@ -11,7 +11,9 @@ layout: <%= postsLayout %>
 
 # ¡Este es mi primer post!
 
-<img class="img-responsive img-border img-full" src="{{pathAssets}}img/slide-1.jpg"/>
+10 de noviembre de 2015
+
+<img class="img-responsive img-border img-full" src="{{pathAssets}}img/book-presentation.jpg"/>
 
 - - -
 
