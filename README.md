@@ -1,8 +1,8 @@
 # rmg-ghcms
 
-This is a mini CMS I made for my entertainment to host your blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
+This is the source code of my blog. This project was made for my entertainment to host a blog in [GitHub Pages](https://pages.github.com/). As you know, you only can upload raw html files in order to publish them in gh-pages and take advantage of GitHub as a web hosting server.
 
-For that, you need some way to edit only your posts without having to deal with any databases (not supported by gh-pages) and get your html file magically created and ready to upload into your repository.
+For that, you need of some way to edit only your posts without having to deal with any databases (not supported by gh-pages) and get your html file magically created and ready to upload into your repository.
 
 [Assemble](http://assemble.io/) to the rescue! Assemble is a static site generator (raw html) for Node.js using the [Handlebars](http://handlebarsjs.com/) template engine. With Assemble you can set up your project to accomplish your goal only editing Markdown files for each new post you want to publish. Awesome!
 
@@ -28,7 +28,7 @@ After that, let's go to get all dependencies:
 Finally, compile our project:
 > grunt
 
-You will have a dist folder at the parent directory of this project, with all the things ready to publish in GitHub. You only need to edit all the templates and posts as you like.
+You will have a dist folder at the parent directory of this project, with all the stuff ready to publish at GitHub. You only need to edit all the templates and posts as you like.
 
 ## Considerations
 
@@ -37,4 +37,4 @@ This project is in continous changes because I'm using it to publish my blog. Fo
 
 - - -
 
-Made with <img src="./public/assets/img/heart-kingdom-hearts.png" alt="love" width="20" height="18"/> thanks to Node.js, Assemble, Handlebars and Grunt using [Business Casual](http://startbootstrap.com/template-overviews/business-casual/) template from StartBootstrap.
+Made with <img src="./public/assets/img/heart-kingdom-hearts.png" alt="love" width="20" height="18"/> thanks to Node.js, Assemble, Handlebars and Grunt.
