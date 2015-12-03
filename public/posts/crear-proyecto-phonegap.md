@@ -21,15 +21,28 @@ Actualmente estoy trabajando casi en exclusiva en la parte front-end de un proye
 
 *NOTA: el sistema que utilizo para desarrollar es una máquina Linux con Ubuntu, por tanto, todas las instrucciones de instalación serán las propias para ese entorno.*
 
-Lo primero que debemos hacer si queremos trabajar con PhoneGap es instalarlo en el sistema. Para ello, debemos descargar PhoneGap de los repositorios de Node.js e instalarlo en nuestra máquina. Evidentemente, si se desea utilizar el ecosistema de paquetes de Node es imprescindible tenerlo instalado previamente. Por tanto, el orden de instrucciones sería:
-
+Lo primero que debemos hacer si queremos trabajar con PhoneGap es instalarlo en el sistema. Para ello, debemos descargarlo de los repositorios de Node.js e instalarlo en nuestra máquina. Evidentemente, si se desea utilizar el ecosistema de paquetes de Node es imprescindible tenerlo instalado previamente. Por tanto, el orden de instrucciones sería:
 ```
-# instalar node:
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt-get install nodejs
+# instalar node si no lo tenemos instalado:
+$ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+$ sudo apt-get install nodejs
 
 # instalar phonegap
-sudo npm install -g phonegap
+$ sudo npm install -g phonegap
 ```
 
-Con esto ya lo tendríamos instalado de forma global.
+Con esto ya lo tendríamos instalado de forma global. El siguiente paso será crear el proyecto:
+```
+$ phonegap create my-app
+```
+
+De esta manera se nos habrá generado un proyecto con las carpetas: *hooks*, *platforms*, *plugins* y *www*; y un archivo: *config.xml*. Lo que ahora mismo nos interesa es el archivo *config.xml* que contendrá la configuración del proyecto una vez compilado y la carpeta www que será el lugar donde desarrollemos nuestra aplicación.
+
+Durante la creación del proyecto, se nos habrá generado un esqueleto con todo lo suficiente para poder probar que nuestro proyecto, efectivamente, se ha formado correctamente. Para ello necesitaremos compilarlo:
+
+```
+$ phonegap build android
+```
+*NOTA: la instrucción generaría el proyecto compilado para la plataforma Android pero, de la misma manera, tb se puede compilar para iOS, firefox OS, Windows Phone, etc. Es muy importante tener en cuenta que para que funcione esta instrucción, necesitamos tener todos los requisitos necesarios para crear la build del proyecto en la plataforma indicada. Para Android, se necesitaría descargar, por ejemplo, el SDK de Android y haber asignado en el path el directorio del SDK.*
+
+Así de sencillo iniciamos un proyecto con PhoneGap. En futuras entradas abordaré temas como Crosswalk, depuración tanto desde un AVD como desde un dispositivo móvil o incluso desde Chrome (también explicaré por qué Chrome es en esta ocasión el navegador más indicado para depurar esta clase de proyectos), se explicará cómo configurar Grunt para conseguir un despliegue adecuado en el lado de cliente, por qué usar un framework front-end single page (como AngularJS) y por qué escoger la ayuda de frameworks para desarrollo móvil en HTML5 como Ionic, Onsen UI o Sencha.
