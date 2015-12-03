@@ -36,13 +36,13 @@ Con esto ya lo tendríamos instalado de forma global. El siguiente paso será cr
 $ phonegap create myApp
 ```
 
-De esta manera se nos habrá generado un proyecto con las carpetas: *hooks*, *platforms*, *plugins* y *www*; y un archivo: *config.xml*. Lo que ahora mismo nos interesa es el archivo *config.xml* que contendrá la configuración del proyecto una vez compilado y la carpeta www que será el lugar donde desarrollemos nuestra aplicación.
+De esta manera se nos habrá generado un proyecto con las carpetas: *hooks*, *platforms*, *plugins* y *www*; y un archivo: *config.xml*. Lo que ahora mismo nos interesa es el archivo *config.xml* que contendrá la configuración del proyecto una vez compilado y la carpeta *www* que será el lugar donde desarrollemos nuestra aplicación.
 
-Durante la creación del proyecto, se nos habrá generado un esqueleto con todo lo suficiente para poder probar que nuestro proyecto, efectivamente, se ha formado correctamente. Para ello necesitaremos compilarlo:
+Después de la creación del proyecto, obtendremos un esqueleto con todo lo suficiente para poder probar que, efectivamente, se ha formado correctamente. Para ello necesitaremos compilarlo:
 
 ```
 $ phonegap build android
 ```
-*NOTA: la instrucción generaría el proyecto compilado para la plataforma Android pero, de la misma manera, tb se puede compilar para iOS, firefox OS, Windows Phone, etc. Es muy importante tener en cuenta que para que funcione esta instrucción, necesitamos tener todos los requisitos necesarios para crear la build del proyecto en la plataforma indicada. Para Android, se necesitaría descargar, por ejemplo, el SDK de Android y haber asignado en el path el directorio del SDK.*
+*NOTA: la instrucción generaría el proyecto compilado para la plataforma Android pero, de la misma manera, tb se puede compilar para iOS, Firefox OS, Windows Phone, etc. Es muy importante tener en cuenta que para que funcione esta instrucción, necesitamos tener todos los requisitos necesarios para crear la build del proyecto en la plataforma indicada. Para Android, se necesitaría descargar, por ejemplo, el SDK de Android y haber asignado en el path el directorio del SDK.*
 
-Así de sencillo iniciamos un proyecto con PhoneGap. En futuras entradas abordaré temas como Crosswalk, depuración tanto desde un AVD como desde un dispositivo móvil o incluso desde Chrome (también explicaré por qué Chrome es en esta ocasión el navegador más indicado para depurar esta clase de proyectos), se explicará cómo configurar Grunt para conseguir un despliegue adecuado en el lado de cliente, por qué usar un framework front-end single page (como AngularJS) y por qué escoger la ayuda de frameworks para desarrollo móvil en HTML5 como Ionic, Onsen UI o Sencha Touch.
+Así de sencillo iniciamos un proyecto con PhoneGap. En futuras entradas abordaré temas como qué es y por qué deberíamos usar Crosswalk, depuración tanto desde un AVD como desde un dispositivo móvil o incluso desde Chrome (también explicaré por qué Chrome es en esta ocasión el navegador más indicado para depurar esta clase de proyectos), se explicará cómo configurar Grunt para conseguir un despliegue adecuado en el lado de cliente, por qué usar un framework front-end single page (como AngularJS) y por qué escoger la ayuda de frameworks para desarrollo móvil en HTML5 como Ionic, Onsen UI o Sencha Touch.
