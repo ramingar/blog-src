@@ -1,0 +1,53 @@
+---
+titleOfThisPage: "Sliding-menu"
+---
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+<section>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-cool {
+            left: -85%;
+            position: fixed;
+            width: 85%;
+        }
+
+        .btn-toggle-menu {
+            position: absolute;
+            right: 0;
+            width: 100%;
+            text-align: right;
+            margin-right: -15px;
+        }
+
+        .menu-cool-items {
+            transition: transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
+            transform: translateX(-5%);
+            text-align: left;
+            margin-top: 30px;
+            border: 1px solid;
+            background-color: gray;
+        }
+
+        .btn-toggle-menu:hover .menu-cool-items {
+            transform: translateX(100%);
+        }
+
+    </style>
+
+    <h1>Pruébalo desde el móvil</h1>
+
+
+    <div class="menu-cool">
+        <div class="fa fa-bars btn-toggle-menu">
+            <div class="menu-cool-items">
+                <div>Este sería el menú molón</div>
+            </div>
+        </div>
+    </div>
+
+</section>
