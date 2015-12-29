@@ -4,12 +4,7 @@ titleOfThisPage: "Sliding-menu"
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 <section>
 
-    <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
+    <style scoped type="text/css">
         .menu-cool {
             left: -85%;
             position: fixed;
@@ -17,11 +12,14 @@ titleOfThisPage: "Sliding-menu"
         }
 
         .btn-toggle-menu {
+            color: black;
+            margin-right: -15px;
             position: absolute;
             right: 0;
-            width: 100%;
             text-align: right;
-            margin-right: -15px;
+            text-decoration: none;
+            top: 10px;
+            width: 100%;
         }
 
         .menu-cool-items {
@@ -33,8 +31,20 @@ titleOfThisPage: "Sliding-menu"
             background-color: gray;
         }
 
-        .btn-toggle-menu:hover .menu-cool-items {
+        #sliding-menu:target .menu-cool-items {
             transform: translateX(100%);
+        }
+
+        #sliding-menu:target .btn-menu-open {
+            display: none;
+        }
+
+        .btn-menu-close {
+            display: none;
+        }
+
+        #sliding-menu:target .btn-menu-close {
+            display: block;
         }
 
     </style>
@@ -43,7 +53,9 @@ titleOfThisPage: "Sliding-menu"
 
 
     <div class="menu-cool">
-        <div class="fa fa-bars btn-toggle-menu">
+        <div id="sliding-menu">
+            <a class="fa fa-bars btn-toggle-menu btn-menu-open" href="#sliding-menu"></a>
+            <a class="fa fa-close btn-toggle-menu btn-menu-close" href="#"></a>
             <div class="menu-cool-items">
                 <div>Este sería el menú molón</div>
             </div>
