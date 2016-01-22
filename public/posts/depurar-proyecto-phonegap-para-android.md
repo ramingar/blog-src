@@ -20,13 +20,13 @@ layout: <%= postsLayout %>
 
 En el post anterior se comentó cómo iniciar un proyecto nuevo con PhoneGap. PhoneGap te proporciona un API para atacar al hardware de un dispositivo móvil usando javascript. En este post hablaré de cómo depurar el proyecto.
 
-Tenemos dos posibilidades: depurar desde un AVD (Android Virtual Device), es decir, desde un emulador; o bien, podemos hacerlo desde un dispositivo real. Yo siempre recomendaré usar un dispositivo real ya que es la única garantía de que nuestro desarrollo está siendo depurado con la mayor lealtad al producto final. Cualquier otra forma de depuración es solo una aproximación a la realidad y nos pueden surgir problemas inesperados que no descubrimos durante la fase de testeo. Si aun así no se pudiera probar la aplicación en un teléfono Android, no tendremos más remedio que utilizar mecanismos de emulación; en este caso, yo recomiendo el uso de [Genymotion](https://www.genymotion.com/). Visto que la opción del dispositivo físico es la que recomiendo, esa es la que explicaré.
+Tenemos dos posibilidades: depurar desde un AVD (Android Virtual Device), es decir, desde un emulador; o bien, podemos hacerlo desde un dispositivo real. Yo siempre recomendaré usar un dispositivo real ya que es la única garantía de que nuestro desarrollo está siendo depurado con la mayor lealtad al producto final. Cualquier otra forma de depuración es solo una aproximación a la realidad y nos pueden surgir problemas inesperados que no descubrimos durante la fase de testeo. Si aun así no se pudiera probar la aplicación en un teléfono Android, no tendremos más remedio que utilizar mecanismos de emulación; en este caso, aconsejo el uso de [Genymotion](https://www.genymotion.com/). Por tanto, ya que la opción del dispositivo físico es la que recomiendo, esa es la que explicaré.
 
-El primer paso que debemos hacer para poder depurar nuestro proyecto es habilitar las opciones de desarrollador, opción que se puede encontrar en los Ajustes de nuestro teléfono. Una vez los hayamos habilitado, al conectar el móvil por usb al ordenador, aparecerá una pantalla como la siguiente:
+El primer paso que debemos hacer para poder depurar nuestro proyecto es habilitar las opciones de desarrollador, opción que se puede encontrar en los <em>Ajustes</em> de nuestro teléfono. Una vez los hecho esto, al conectar el móvil por usb al ordenador, aparecerá una pantalla como la siguiente:
 
 <div class="col-md-4">
 <img class="img-responsive img-border img-full" src="{{pathAssets}}img/depurar-proyecto-phonegap-para-android-usb-debugging.jpg"/>
-<h6 class="help-block">Este es síntoma de que todo está funcionando correctamente.</h6>
+<h6 class="help-block">Esto es señal de que todo está funcionando correctamente.</h6>
 </div>
 
 <div class="col-md-8">
