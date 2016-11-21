@@ -1,5 +1,5 @@
 body {
-  background-image: url(../../assets/img/bg.png);
+  /* background-image: url(../../assets/img/bg.png); */
   font-family: 'Open Sans', sans-serif;
   height: 100%;
   width: 100%;
@@ -37,10 +37,12 @@ body {
   margin: auto;
 }
 
+/*
 .container {
   width: 60em;
   margin: auto;
 }
+*/
 
 .container-blog {
   background-color: white;
@@ -69,4 +71,18 @@ footer {
 
 p {
   margin: 0 0 20px;
+}
+
+
+
+
+
+/* ***************************************** */
+/* **** NEW DESIGN ************************* */
+/* ***************************************** */
+.image-post {
+  width: 100%;
+  height: 230px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
