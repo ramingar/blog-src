@@ -11,7 +11,7 @@ layout: <%= postsLayout %>
 
 # Depurar un proyecto PhoneGap para Android
 
-29 de diciembre de 2015
+<div class="date">29 de diciembre de 2015</div>
 
 <img class="img-responsive img-border img-full" src="{{pathAssets}}img/phonegapConfigXML.jpg"/>
 

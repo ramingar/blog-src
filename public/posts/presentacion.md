@@ -11,7 +11,7 @@ layout: <%= postsLayout %>
 
 # ¡Este es mi primer post!
 
-10 de noviembre de 2015
+<div class="date">10 de noviembre de 2015</div>
 
 <img class="img-responsive img-border img-full" src="{{pathAssets}}img/book-presentation.jpg"/>
 

@@ -11,7 +11,7 @@ layout: <%= postsLayout %>
 
 # Creando un proyecto con PhoneGap
 
-01 de diciembre de 2015
+<div class="date">01 de diciembre de 2015</div>
 
 <img class="img-responsive img-border img-full" src="{{pathAssets}}img/phonegap-logo.png"/>
 
