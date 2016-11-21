@@ -1,6 +1,6 @@
 {
   "name": "rmg-ghcms",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Source code of my published blog (or what will be my published blog)",
   "main": "index.hbs",
   "dependencies": {
@@ -31,7 +31,7 @@
     "grunt"
   ],
   "author": "Rafael Minguet García",
-  "license": "GNU GPL v2",
+  "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/ramingar/rmg-ghcms/issues"
   },
