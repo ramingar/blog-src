@@ -51,7 +51,6 @@ footer {
     bottom             : 0;
     background-color   : white;
     padding            : 1em;
-    position           : fixed;
     text-align         : center;
     width              : 100%;
 }
@@ -76,7 +75,7 @@ p {
 }
 
 .post {
-    width  : 90%;
+    width  : 100%;
     margin : auto;
 }
 
@@ -86,4 +85,13 @@ p {
 
 .post .date {
     text-align : center;
+}
+
+.post p, .post h1 {
+    margin : 20px auto;
+    width  : 90%;
+}
+
+.post img[alt='main-image'] {
+    width : 100%;
 }

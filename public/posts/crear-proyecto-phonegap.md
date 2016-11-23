@@ -13,7 +13,7 @@ layout: <%= postsLayout %>
 
 <div class="date">01 de diciembre de 2015</div>
 
-<img class="img-responsive img-border img-full" src="{{pathAssets}}img/phonegap-logo.png"/>
+![main-image]({{pathAssets}}img/phonegap-logo.png)
 
 - - -
 
