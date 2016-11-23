@@ -87,11 +87,28 @@ p {
     text-align : center;
 }
 
-.post p, .post h1 {
+.post p,
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6,
+.post ul {
     margin : 20px auto;
     width  : 90%;
 }
 
 .post img[alt='main-image'] {
     width : 100%;
+}
+
+.post img[alt='help-image'] {
+    margin    : auto;
+    display   : inherit;
+    max-width : 100%;
+}
+
+.help-block {
+    text-align : center;
 }
