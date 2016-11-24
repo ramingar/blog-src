@@ -8,7 +8,6 @@ titleOfThisPage: "Blog"
 
             {{#each (postsJSON posts)}}
                 <div class="{{#gt @index 4}}hidden{{else}}displayed{{/gt}} postExcerpt">
-                    <!-- <img class="img-responsive img-border img-full rmg-img-centered" src="{{pathAssets}}/img/{{this.data.headerImage}}" alt="Imagen de {{this.data.titleOfThisPage}}"> -->
                     <div class="post-image" style="background-image:url({{pathAssets}}/img/{{this.data.headerImage}})"></div>
                     <h2 class="text-center">{{this.data.titleOfThisPage}}
                         <br/>

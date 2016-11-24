@@ -4,24 +4,6 @@ body {
     width       : 100%;
 }
 
-.body-outer {
-    height     : 12em;
-    margin-top : -6em;
-    position   : absolute;
-    top        : 40%;
-    width      : 800px;
-}
-
-.headers {
-    color       : white;
-    text-align  : center;
-    text-shadow : 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-.main-title {
-    font-size : 4em;
-}
-
 .rmg-navbar {
     border-radius : 0;
     margin-top    : -20px;
@@ -30,17 +12,6 @@ body {
 .rmg-nav-container {
     margin : auto !important;
     width  : 21em;
-}
-
-.rmg-img-centered {
-    margin : auto;
-}
-
-.container-blog {
-    background-color : white;
-    margin           : auto auto 10em;
-    padding          : 5em;
-    text-align       : center;
 }
 
 footer {
@@ -53,10 +24,6 @@ footer {
     padding            : 1em;
     text-align         : center;
     width              : 100%;
-}
-
-p {
-    margin : 0 0 20px;
 }
 
 /* ***************************************** */
