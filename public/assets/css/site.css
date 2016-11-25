@@ -4,14 +4,77 @@ body {
     width       : 100%;
 }
 
-.rmg-navbar {
-    border-radius : 0;
-    margin-top    : -20px;
+.background-main-page {
+    background-image    : url(https://farm4.staticflickr.com/3513/4041300978_ba8746aba5_o_d.jpg);
+    background-position : 50%;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    position            : absolute;
+    left                : 0;
+    width               : 100%;
+    height              : 90%;
+    margin-top          : -20px;
 }
 
-.rmg-nav-container {
-    margin : auto !important;
-    width  : 21em;
+.navbar {
+    margin-top : -20px;
+}
+
+.rmg-navbar {
+    width      : 100%;
+    padding    : 15px;
+    color      : rgba(80, 80, 80, 1);
+    text-align : center;
+    position   : relative;
+}
+
+.rmg-navbar li {
+    display  : inline-block;
+    padding  : 0;
+    width    : 33%;
+    height   : 50px;
+    margin   : 0 0 -30px;
+    top      : 0;
+    position : absolute;
+}
+
+.rmg-navbar li:nth-child(3) {
+    left : 65%;
+}
+
+.rmg-navbar li:nth-child(2) {
+    left : 33%;
+}
+
+.rmg-navbar li:first-child {
+    left : 0;
+}
+
+.rmg-navbar li a {
+    color           : rgba(80, 80, 80, 1);
+    text-decoration : none;
+    width           : 100%;
+    height          : 30px;
+    top             : 50%;
+    position        : absolute;
+    margin-top      : -15px;
+    left            : 0;
+}
+
+.div-outer {
+    position   : inherit;
+    text-align : center;
+    color      : white;
+}
+
+.div-inner {
+    top        : 50%;
+    height     : 150px;
+    margin-top : -75px;
+    width      : 70%;
+    left       : 15%;
+    position   : absolute;
+    box-shadow : inset 0 0 300px 5px rgba(0, 0, 0, .9), 0 0 100px 20px rgba(0, 0, 0, .9);
 }
 
 footer {
@@ -24,11 +87,17 @@ footer {
     padding            : 1em;
     text-align         : center;
     width              : 100%;
+    font-size          : 12px;
 }
 
-/* ***************************************** */
-/* **** NEW DESIGN ************************* */
-/* ***************************************** */
+.main-page ~ footer {
+    position : absolute;
+}
+
+.main-page-subtitle {
+    display : none;
+}
+
 .post-image {
     width             : 100%;
     height            : 230px;
@@ -78,4 +147,41 @@ footer {
 
 .help-block {
     text-align : center;
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (min-device-height : 530px) {
+
+    .main-page-subtitle {
+        display : inherit;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px) {
+
+    .div-outer {
+        position   : inherit;
+        text-align : center;
+        color      : white;
+    }
+
+    .div-inner {
+        position   : absolute;
+        top        : 50%;
+        height     : 300px;
+        margin-top : -150px;
+        width      : 70%;
+        left       : 15%;
+        /*
+        background-color : black;
+        border-radius    : 50px;
+        padding          : 50px;
+        */
+    }
+
+    footer {
+        font-size : inherit;
+    }
 }
