@@ -1,72 +1,195 @@
 body {
-  background-image: url(../../assets/img/bg.png);
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  width: 100%;
+    font-family : 'Open Sans', sans-serif;
+    height      : 100%;
+    width       : 100%;
 }
 
-.body-outer {
-  height: 12em;
-  margin-top: -6em;
-  position: absolute;
-  top: 40%;
-  width: 800px;
+.background-main-page {
+    background-image    : url(https://farm4.staticflickr.com/3513/4041300978_ba8746aba5_o_d.jpg);
+    background-position : 50%;
+    background-repeat   : no-repeat;
+    background-size     : cover;
+    position            : absolute;
+    left                : 0;
+    width               : 100%;
+    height              : 90%;
+    margin-top          : -20px;
 }
 
-.headers {
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
-}
-
-.main-title {
-  font-size: 4em;
+.navbar {
+    margin-top : -20px;
 }
 
 .rmg-navbar {
-  border-radius: 0;
-  margin-top: -20px;
+    width      : 100%;
+    padding    : 15px;
+    color      : rgba(80, 80, 80, 1);
+    text-align : center;
+    position   : relative;
 }
 
-.rmg-nav-container {
-  margin: auto !important;
-  width: 21em;
+.rmg-navbar li {
+    display  : inline-block;
+    padding  : 0;
+    width    : 33%;
+    height   : 50px;
+    margin   : 0 0 -30px;
+    top      : 0;
+    position : absolute;
 }
 
-.rmg-img-centered {
-  margin: auto;
+.rmg-navbar li:nth-child(3) {
+    left : 65%;
 }
 
-.container {
-  width: 60em;
-  margin: auto;
+.rmg-navbar li:nth-child(2) {
+    left : 33%;
 }
 
-.container-blog {
-  background-color: white;
-  margin: auto auto 10em;
-  padding: 5em;
-  text-align: center;
+.rmg-navbar li:first-child {
+    left : 0;
+}
+
+.rmg-navbar li a {
+    color           : rgba(80, 80, 80, 1);
+    text-decoration : none;
+    width           : 100%;
+    height          : 30px;
+    top             : 50%;
+    position        : absolute;
+    margin-top      : -15px;
+    left            : 0;
+}
+
+.div-outer {
+    position   : inherit;
+    text-align : center;
+    color      : white;
+}
+
+.div-inner {
+    top           : 50%;
+    height        : 150px;
+    margin-top    : -75px;
+    width         : 70%;
+    left          : 15%;
+    position      : absolute;
+    box-shadow    : inset 0 0 250px 10px rgba(0, 0, 0, .9), 0 0 50px 8px rgba(0, 0, 0, .9);
+    border-radius : 90px;
+}
+
+footer {
+    -webkit-box-shadow : 0 0 6px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow    : 0 0 6px 0 rgba(0, 0, 0, 0.75);
+    box-shadow         : 0 0 6px 0 rgba(0, 0, 0, 0.75);
+
+    bottom             : 0;
+    background-color   : white;
+    padding            : 1em;
+    text-align         : center;
+    width              : 100%;
+    font-size          : 12px;
+}
+
+.main-page ~ footer {
+    position : absolute;
+}
+
+.main-page-subtitle {
+    display : none;
+}
+
+.post-image {
+    width             : 100%;
+    height            : 230px;
+    background-size   : cover;
+    background-repeat : no-repeat;
+}
+
+.post-excerpt {
+    width  : 90%;
+    margin : auto;
 }
 
 .post {
-  text-align: left;
+    width  : 100%;
+    margin : auto;
 }
 
-
-footer {
-  -webkit-box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
-  -moz-box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.75);
-
-  bottom: 0;
-  background-color: white;
-  padding: 1em;
-  position: fixed;
-  text-align: center;
-  width: 100%;
+.post h1 {
+    text-align : center;
 }
 
-p {
-  margin: 0 0 20px;
+.post .date {
+    text-align : center;
+}
+
+.post p,
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6,
+.post ul {
+    margin : 20px auto;
+    width  : 90%;
+}
+
+.post img[alt='main-image'] {
+    width : 100%;
+}
+
+.post img[alt='help-image'] {
+    margin    : auto;
+    display   : inherit;
+    max-width : 100%;
+}
+
+.help-block {
+    text-align : center;
+}
+
+@media only screen
+and (min-device-width : 480px)
+and (min-device-height : 530px) {
+
+    .main-page-subtitle {
+        display : inherit;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px) {
+
+    .div-outer {
+        position   : inherit;
+        text-align : center;
+        color      : white;
+    }
+
+    .div-inner {
+        position   : absolute;
+        top        : 50%;
+        height     : 300px;
+        margin-top : -150px;
+        width      : 70%;
+        left       : 15%;
+    }
+
+    footer {
+        font-size : inherit;
+    }
+}
+
+@media only screen
+and (min-device-width : 900px) {
+    .navbar-container {
+        width: 500px;
+        margin: auto;
+    }
+
+    .blog, .post {
+        max-width: 900px;
+    }
 }

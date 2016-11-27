@@ -41,8 +41,7 @@ module.exports = function (grunt) {
       dist2: {
         src: [
           './public/assets/css/bootstrap.css',
-          './public/assets/css/site.css',
-          './public/assets/css/parallax.css'
+          './public/assets/css/site.css'
         ],
         dest: './public/assets/css/production.css'
       }
@@ -116,13 +115,6 @@ module.exports = function (grunt) {
               './public/assets/js/bootstrap.js'
             ],
             dest: '../dist/assets/js/bootstrap.js'
-          },
-          {
-            filter: 'isFile',
-            src: [
-              './public/assets/js/parallax.min.js'
-            ],
-            dest: '../dist/assets/js/parallax.min.js'
           }
         ]
       }

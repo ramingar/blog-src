@@ -11,9 +11,9 @@ layout: <%= postsLayout %>
 
 # Depurar un proyecto PhoneGap para Android
 
-29 de diciembre de 2015
+<div class="date">29 de diciembre de 2015</div>
 
-<img class="img-responsive img-border img-full" src="{{pathAssets}}img/phonegapConfigXML.jpg"/>
+![main-image]({{pathAssets}}img/phonegapConfigXML.jpg)
 
 - - -
 
@@ -24,15 +24,10 @@ Tenemos dos posibilidades: depurar desde un AVD (Android Virtual Device), es dec
 
 El primer paso que debemos hacer para poder depurar nuestro proyecto es habilitar las opciones de desarrollador, opción que se puede encontrar en los <em>Ajustes</em> de nuestro teléfono. Una vez los hecho esto, al conectar el móvil por usb al ordenador, aparecerá una pantalla como la siguiente:
 
-<div class="col-md-4">
-<img class="img-responsive img-border img-full" src="{{pathAssets}}img/depurar-proyecto-phonegap-para-android-usb-debugging.jpg"/>
+![help-image]({{pathAssets}}img/depurar-proyecto-phonegap-para-android-usb-debugging.jpg)
 <h6 class="help-block">Esto es señal de que todo está funcionando correctamente.</h6>
-</div>
 
-<div class="col-md-8">
 Puede que nuestro ordenador no consiga ver el teléfono. Esto será señal de que debemos preparar a nuestro sistema operativo para que lo reconozca al conectarlo por USB. Si estamos en Windows, necesitaremos instalar los [drivers de USB para ADB](http://developer.android.com/tools/extras/oem-usb.html). Si estamos en Linux ─concretamente, en Ubuntu─, necesitaremos añadir una regla udev. Los pasos para hacerlo son los siguientes:
-</div>
-<br style="clear:both" />
 
 - Primero, apunta el id de vendor del móvil. Puedes encontrarlo [aquí](http://developer.android.com/tools/device.html#VendorIds), o si escribes `lsusb` en tu terminal. Por ejemplo, el vendor de un BQ sería 0x2a47 y el de un OnePlus sería 0x05c6.
 - Modifica o crea el fichero /etc/udev/rules.d/51-android.rules y añade: `SUBSYSTEM=="usb", ATTR{idVendor}=="0x2a47", MODE="0666", GROUP="plugdev"` (teniendo en cuenta que estés registrando un dispositivo BQ).
