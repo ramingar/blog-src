@@ -175,14 +175,21 @@ and (min-device-width : 768px) {
         margin-top : -150px;
         width      : 70%;
         left       : 15%;
-        /*
-        background-color : black;
-        border-radius    : 50px;
-        padding          : 50px;
-        */
     }
 
     footer {
         font-size : inherit;
+    }
+}
+
+@media only screen
+and (min-device-width : 900px) {
+    .navbar-container {
+        width: 500px;
+        margin: auto;
+    }
+
+    .blog, .post {
+        max-width: 900px;
     }
 }
