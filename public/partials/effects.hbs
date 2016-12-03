@@ -1,0 +1,39 @@
+<!-- Script to Activate the Effects in Blog.html -->
+<script>
+    /*jslint undef: true */
+
+    var Effects = (function () {
+        'use strict';
+
+        var toggleNavOnScroll = function (element) {
+            var hideNav = function () {
+                $('.navbar').addClass('hide-preserving');
+            };
+
+            var showNav = function () {
+                $('.navbar').removeClass('hide-preserving');
+            };
+
+            $(document).on('scroll', function () {
+                var positionOnPage = element[0].getBoundingClientRect().top;
+                if (positionOnPage < 0) {
+                    showNav();
+                }
+            });
+
+            // End of scroll
+            $(document).on('scroll', function () {
+                var positionOnPage = element[0].getBoundingClientRect().top;
+                if (positionOnPage >= 0) {
+                    showNav();
+                } else {
+                    hideNav();
+                }
+            }, 3000);
+        };
+
+        return {
+            toggleNavOnScroll: toggleNavOnScroll
+        };
+    })();
+</script>
