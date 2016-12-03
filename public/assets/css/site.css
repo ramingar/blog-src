@@ -17,7 +17,10 @@ body {
 }
 
 .navbar {
-    margin-top : -20px;
+    margin-top : -21px;
+    position   : fixed;
+    width      : 100%;
+    z-index    : 10;
 }
 
 .rmg-navbar {
@@ -97,6 +100,10 @@ footer {
 
 .main-page-subtitle {
     display : none;
+}
+
+.blog {
+    margin-top : 40px;
 }
 
 .post-image {
@@ -185,11 +192,11 @@ and (min-device-width : 768px) {
 @media only screen
 and (min-device-width : 900px) {
     .navbar-container {
-        width: 500px;
-        margin: auto;
+        width  : 500px;
+        margin : auto;
     }
 
     .blog, .post {
-        max-width: 900px;
+        max-width : 900px;
     }
 }
