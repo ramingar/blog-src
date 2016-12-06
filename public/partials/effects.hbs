@@ -5,7 +5,7 @@
     var Effects = (function () {
         'use strict';
 
-        var toggleNavOnScroll = function (elementScrolled, elementHidden) {
+        var toggleOnScroll = function (elementScrolled, elementHidden, position, reverse) {
             var hideNav = function () {
                 elementHidden.addClass('hide-preserving');
             };
@@ -16,24 +16,38 @@
 
             $(document).on('scroll', function () {
                 var positionOnPage = elementScrolled[0].getBoundingClientRect().top;
-                if (positionOnPage < 0) {
-                    showNav();
+                if (reverse) {
+                    if (positionOnPage > position) {
+                        showNav();
+                    }
+                } else {
+                    if (positionOnPage < position) {
+                        showNav();
+                    }
                 }
             });
 
             // End of scroll
             $(document).on('scroll', function () {
                 var positionOnPage = elementScrolled[0].getBoundingClientRect().top;
-                if (positionOnPage >= 0) {
-                    showNav();
+                if (reverse) {
+                    if (positionOnPage < position) {
+                        showNav();
+                    } else {
+                        hideNav();
+                    }
                 } else {
-                    hideNav();
+                    if (positionOnPage >= position) {
+                        showNav();
+                    } else {
+                        hideNav();
+                    }
                 }
             }, 2000);
         };
 
         return {
-            toggleNavOnScroll: toggleNavOnScroll
+            toggleOnScroll: toggleOnScroll
         };
     })();
 </script>
