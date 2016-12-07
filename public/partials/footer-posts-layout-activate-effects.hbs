@@ -3,6 +3,8 @@
     /*jslint undef: true */
 
     (function () {
-        Effects.toggleOnScroll($('.post'), $('.navbar'), 0);
+        var post = $('div.container.post');
+        Effects.toggleOnScroll(post, $('.navbar'), 0);
+        Effects.toggleOnScroll(post, $('#social'), 0);
     })();
 </script>

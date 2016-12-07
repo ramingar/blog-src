@@ -5,13 +5,22 @@
     var Effects = (function () {
         'use strict';
 
+        var elementsHidden = [];
+
         var toggleOnScroll = function (elementScrolled, elementHidden, position, reverse) {
+
+            elementsHidden.push(elementHidden);
+
             var hideNav = function () {
-                elementHidden.addClass('hide-preserving');
+                for (var ii = 0; ii < elementsHidden.length; ii++) {
+                    elementsHidden[ii].addClass('hide-preserving');
+                }
             };
 
             var showNav = function () {
-                elementHidden.removeClass('hide-preserving');
+                for (var ii = 0; ii < elementsHidden.length; ii++) {
+                    elementsHidden[ii].removeClass('hide-preserving');
+                }
             };
 
             $(document).on('scroll', function () {
@@ -20,7 +29,8 @@
                     if (positionOnPage > position) {
                         showNav();
                     }
-                } else {
+                }
+                else {
                     if (positionOnPage < position) {
                         showNav();
                     }
@@ -33,13 +43,16 @@
                 if (reverse) {
                     if (positionOnPage < position) {
                         showNav();
-                    } else {
+                    }
+                    else {
                         hideNav();
                     }
-                } else {
+                }
+                else {
                     if (positionOnPage >= position) {
                         showNav();
-                    } else {
+                    }
+                    else {
                         hideNav();
                     }
                 }
