@@ -146,6 +146,18 @@ body #social:hover {
     margin : auto;
 }
 
+.post-card {
+    transition : transform .3s ease, box-shadow .3s ease;
+    box-shadow : 0 0 0 0 black;
+    transform  : scale3d(1, 1, 1);
+    cursor     : pointer;
+}
+
+.post-card:hover {
+    box-shadow : 0 0 0 0 black;
+    transform  : scale3d(1, 1, 1);
+}
+
 .post {
     width  : 100%;
     margin : 40px auto auto;
@@ -251,6 +263,15 @@ and (min-width : 1024px) {
 
     .blog ~ footer .social-separator,
     .post ~ footer .social-separator {
+        opacity : 0;
+    }
+
+    .post-card:hover {
+        box-shadow : 0 0 35px -10px rgba(0, 0, 0, 1);
+        transform  : scale3d(1.02, 1.02, 1);
+    }
+
+    .read-more {
         opacity : 0;
     }
 }

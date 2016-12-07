@@ -7,29 +7,34 @@ titleOfThisPage: "Blog"
         <div class="text-center">
 
             {{#each (postsJSON posts)}}
-                <div class="{{#gt @index 4}}hidden{{else}}displayed{{/gt}} postExcerpt">
-                    <div class="post-image" style="background-image:url({{pathAssets}}/img/{{this.data.headerImage}})"></div>
-                    <h2 class="text-center">{{this.data.titleOfThisPage}}
-                        <br/>
-                        <small class="text-center">
-                            {{formatDate this.data.posted "%d"}} de
-                            {{monthInSpanish (formatDate this.data.posted "%m")}} de
-                            {{formatDate this.data.posted "%Y"}}
-                        </small>
-                    </h2>
-                    <div class="post-excerpt">
-                        <p class="text-left">{{this.content}} [...]</p>
-                        <div class="text-center">
-                            <a href="{{pathPosts}}{{this.dest}}" class="btn btn-default btn-lg">Lee más</a>
+                <div onclick="location.pathname='{{pathPosts}}{{this.dest}}'" class="post-card">
+                    <div class="{{#gt @index 4}}hidden{{else}}displayed{{/gt}} postExcerpt">
+                        <div class="post-image"
+                             style="background-image:url({{pathAssets}}/img/{{this.data.headerImage}})"></div>
+                        <h2 class="text-center">{{this.data.titleOfThisPage}}
+                            <br />
+                            <small class="text-center">
+                                {{formatDate this.data.posted "%d"}} de
+                                {{monthInSpanish (formatDate this.data.posted "%m")}} de
+                                {{formatDate this.data.posted "%Y"}}
+                            </small>
+                        </h2>
+                        <div class="post-excerpt">
+                            <p class="text-left">{{this.content}} [...]</p>
+                            <div class="text-center read-more">
+                                <a href="{{pathPosts}}{{this.dest}}" class="btn btn-default btn-lg">Lee más</a>
+                            </div>
                         </div>
+                        <hr />
                     </div>
-                    <hr/>
                 </div>
             {{/each}}
 
             <div class="text-center">
                 <ul class="pager">
-                    <li id="previous" class="previous hidden"><a href="#" onclick="pagination.previous(5)">&larr; Nuevos</a></li>
+                    <li id="previous" class="previous hidden">
+                        <a href="#" onclick="pagination.previous(5)">&larr; Nuevos</a>
+                    </li>
                     <li id="next" class="next"><a href="#" onclick="pagination.next(5)">Viejos &rarr;</a></li>
                 </ul>
             </div>
