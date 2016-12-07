@@ -20,6 +20,10 @@ body .hide-preserving {
     opacity : 0;
 }
 
+body .navbar:hover {
+    opacity : 1;
+}
+
 .navbar {
     margin-top : -21px;
     position   : fixed;
@@ -102,6 +106,10 @@ footer {
 
 #social {
     transition : opacity .5s ease;
+}
+
+body #social:hover {
+    opacity : 1;
 }
 
 #social .social-link {
