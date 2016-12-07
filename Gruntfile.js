@@ -108,13 +108,6 @@ module.exports = function (grunt) {
               './public/assets/js/jquery.js'
             ],
             dest: '../dist/assets/js/jquery.js'
-          },
-          {
-            filter: 'isFile',
-            src: [
-              './public/assets/js/bootstrap.js'
-            ],
-            dest: '../dist/assets/js/bootstrap.js'
           }
         ]
       }

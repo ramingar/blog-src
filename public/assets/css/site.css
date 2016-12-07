@@ -16,8 +16,21 @@ body {
     margin-top          : -20px;
 }
 
+body .hide-preserving {
+    opacity : 0;
+}
+
+body .navbar:hover {
+    opacity : 1;
+}
+
 .navbar {
-    margin-top : -20px;
+    margin-top : -21px;
+    position   : fixed;
+    width      : 100%;
+    z-index    : 10;
+    transition : opacity .5s ease;
+    opacity    : 1;
 }
 
 .rmg-navbar {
@@ -91,12 +104,34 @@ footer {
     font-size          : 12px;
 }
 
+#social {
+    transition : opacity .5s ease;
+}
+
+body #social:hover {
+    opacity : 1;
+}
+
+#social .social-link {
+    display             : inline-block;
+    background-repeat   : no-repeat;
+    background-size     : contain;
+    background-position : center;
+    width               : 30px;
+    height              : 30px;
+    opacity             : 0.90;
+}
+
 .main-page ~ footer {
     position : absolute;
 }
 
 .main-page-subtitle {
     display : none;
+}
+
+.blog {
+    margin-top : 40px;
 }
 
 .post-image {
@@ -111,9 +146,21 @@ footer {
     margin : auto;
 }
 
+.post-card {
+    transition : transform .3s ease, box-shadow .3s ease;
+    box-shadow : 0 0 0 0 black;
+    transform  : scale3d(1, 1, 1);
+    cursor     : pointer;
+}
+
+.post-card:hover {
+    box-shadow : 0 0 0 0 black;
+    transform  : scale3d(1, 1, 1);
+}
+
 .post {
     width  : 100%;
-    margin : auto;
+    margin : 40px auto auto;
 }
 
 .post h1 {
@@ -151,8 +198,15 @@ footer {
 }
 
 @media only screen
-and (min-device-width : 480px)
-and (min-device-height : 530px) {
+and (max-width : 1023px) {
+    #social {
+        opacity : 0.90 !important;
+    }
+}
+
+@media only screen
+and (min-width : 480px)
+and (min-height : 530px) {
 
     .main-page-subtitle {
         display : inherit;
@@ -160,7 +214,7 @@ and (min-device-height : 530px) {
 }
 
 @media only screen
-and (min-device-width : 768px) {
+and (min-width : 768px) {
 
     .div-outer {
         position   : inherit;
@@ -183,13 +237,41 @@ and (min-device-width : 768px) {
 }
 
 @media only screen
-and (min-device-width : 900px) {
+and (min-width : 900px) {
     .navbar-container {
-        width: 500px;
-        margin: auto;
+        width  : 500px;
+        margin : auto;
     }
 
     .blog, .post {
-        max-width: 900px;
+        max-width : 875px;
+    }
+}
+
+@media only screen
+and (min-width : 1024px) {
+    .blog ~ footer #social,
+    .post ~ footer #social {
+        position    : fixed;
+        left        : 0;
+        top         : 50%;
+        height      : 200px;
+        width       : 30px;
+        margin-top  : -100px;
+        margin-left : 25px;
+    }
+
+    .blog ~ footer .social-separator,
+    .post ~ footer .social-separator {
+        opacity : 0;
+    }
+
+    .post-card:hover {
+        box-shadow : 0 0 35px -10px rgba(0, 0, 0, 1);
+        transform  : scale3d(1.02, 1.02, 1);
+    }
+
+    .read-more {
+        opacity : 0;
     }
 }

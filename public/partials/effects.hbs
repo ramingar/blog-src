@@ -1,0 +1,66 @@
+<!-- Script to Activate the Effects in Blog.html -->
+<script>
+    /*jslint undef: true */
+
+    var Effects = (function () {
+        'use strict';
+
+        var elementsHidden = [];
+
+        var toggleOnScroll = function (elementScrolled, elementHidden, position, reverse) {
+
+            elementsHidden.push(elementHidden);
+
+            var hideNav = function () {
+                for (var ii = 0; ii < elementsHidden.length; ii++) {
+                    elementsHidden[ii].addClass('hide-preserving');
+                }
+            };
+
+            var showNav = function () {
+                for (var ii = 0; ii < elementsHidden.length; ii++) {
+                    elementsHidden[ii].removeClass('hide-preserving');
+                }
+            };
+
+            $(document).on('scroll', function () {
+                var positionOnPage = elementScrolled[0].getBoundingClientRect().top;
+                if (reverse) {
+                    if (positionOnPage > position) {
+                        showNav();
+                    }
+                }
+                else {
+                    if (positionOnPage < position) {
+                        showNav();
+                    }
+                }
+            });
+
+            // End of scroll
+            $(document).on('scroll', function () {
+                var positionOnPage = elementScrolled[0].getBoundingClientRect().top;
+                if (reverse) {
+                    if (positionOnPage < position) {
+                        showNav();
+                    }
+                    else {
+                        hideNav();
+                    }
+                }
+                else {
+                    if (positionOnPage >= position) {
+                        showNav();
+                    }
+                    else {
+                        hideNav();
+                    }
+                }
+            }, 2000);
+        };
+
+        return {
+            toggleOnScroll: toggleOnScroll
+        };
+    })();
+</script>

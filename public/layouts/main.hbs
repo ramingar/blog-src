@@ -22,12 +22,14 @@ pathToAssets: <%= pathAssets %>
     {{>footer-js}}
   
     {{#is page.filename "index.html"}}
-        <!-- Activate the carousel (only if current page is index.html) -->
-        {{>footer-activate-carousel}}
+        <!-- JS scripts only if current page is index.html -->
     {{/is}}
 
     {{#is page.filename "blog.html"}}
         <!-- Retrieve posts in JSON (only if current page is blog.html) -->
+        {{>jquery-on-extended}}
+        {{>effects}}
+        {{>footer-blog-activate-effects}}
         {{>footer-retrieve-posts-json}}
     {{/is}}
 
