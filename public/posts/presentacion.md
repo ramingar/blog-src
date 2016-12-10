@@ -19,9 +19,9 @@ layout: <%= postsLayout %>
 
 YAAAAY! La verdad es que ahora que escribo el primer artículo de mi blog, ¡sienta súper bien!
 
-Inicié la creación de este blog como un reto personal: crear un blog desde cero que pudiese ser alojado en Github Pages y cuyos artículos se generasen a partir de markdowns... hete [aquí](https://github.com/ramingar/ramingar.github.io) el resultado. Así que, una vez superado el reto, ¿por qué no aprovechar el producto y darle algo de contenido?
+Inicié la creación de este blog en febrero del 2015 como un reto personal: crear un blog desde cero que pudiese ser alojado en Github Pages y cuyos artículos se generasen a partir de markdowns... hete [aquí](https://github.com/ramingar/ramingar.github.io) el resultado. Así que, una vez superado el reto, ¿por qué no aprovechar el producto y darle algo de contenido?
 
-En este blog se podrán encontrar artículos back-end y front-end de proyectos programados en cualquier lenguaje que se me pase por la cabeza, siempre que sea alguno con el que esté trabajando o esté investigando en ese momento. Procuraré centrarme en técnicas de programación, consejos, guías explicadas paso a paso, etc., y me esforzaré por que cada post sea de la mayor utilidad para el lector.
+En este blog se podrán encontrar artículos back-end y front-end de proyectos programados en cualquier lenguaje que se me pase por la cabeza, siempre que sea alguno del que pueda hablar con cierto grado de propiedad. Procuraré centrarme en técnicas de programación, consejos, guías explicadas paso a paso, etc., y me esforzaré por que cada post sea de la mayor utilidad para el lector.
 
 Todo el contenido y sus fuentes tienen una licencia GNU GPL v2 por lo que cualquiera puede usarlo, estudiarlo, compartir y copiarlo, y modificarlo como quiera siempre bajo los términos de esa licencia. El código fuente de este blog se encuentra [en Github](https://github.com/ramingar/rmg-ghcms) y también se puede instalar desde los repositorios de Node.js si escribes: `npm install rmg-ghcms` (aunque no te recomiendo esta última opción ya que no aseguro que lo suba de forma constante a los repos de node).
 
