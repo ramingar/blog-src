@@ -1,6 +1,6 @@
 {
   "name": "rmg-ghcms",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Source code of my published blog (or what will be my published blog)",
   "main": "index.hbs",
   "dependencies": {
